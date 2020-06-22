@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://crcrowe0.com/soap-springboot"
+           targetNamespace="http://crcrowe0.com/soap-springboot"
+           elementFormDefault="qualified">
+    <xs:element name="getBlogRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getBlogResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="blog" type="tns:blog" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="blog">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string" />
+            <xs:element name="author" type="xs:string" />
+            <xs:element name="content" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

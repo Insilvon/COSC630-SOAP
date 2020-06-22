@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:us="http://crcrowe0.com/soap-springboot">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <us:getBlogRequest>
+            <us:title>Title1</us:title>
+        </us:getBlogRequest>
+    </soapenv:Body>
+</soapenv:Envelope>
